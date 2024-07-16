@@ -1,0 +1,114 @@
+/* Apply reset styles to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family for the entire body */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Style for the main container, centering content and filling viewport */
+.container {
+    min-height: 100vh;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+/* Style for the title within the container */
+.container .title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Common style for both palindrome and definition sections */
+.container .palindrome, .palindrome-definition {
+    max-width: 446px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Style specific to the palindrome input section */
+.container .palindrome {
+    background-color: #FFFFFF;
+    padding: 55px;
+}
+
+/* Style for the text input field in the palindrome section */
+.container .palindrome #text-input {
+    width: 100%;
+    height: 33px;
+    outline: none;
+    border: solid 1px #CDCDCD;
+    border-radius: 10px;
+    color: #CDCDCD;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Style for the text input field when focused */
+.container .palindrome #text-input:focus {
+    outline: solid 1px #FF6C47;
+    box-shadow: 0px 0px 10px 0px #ff6c477d;
+}
+
+/* Style for placeholder text in all input fields */
+::placeholder {
+    color: #CDCDCD;
+}
+
+/* Style for the button in the palindrome section */
+.container .palindrome #check-btn {
+    width: 130px;
+    height: 30px;
+    background-color: #FF6C47;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+/* Style for the button when hovered */
+.container .palindrome #check-btn:hover {
+    opacity: 0.8;
+}
+
+/* Style for the result text in the palindrome section */
+.container .palindrome #result {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Style for emphasized text within the result */
+.container .palindrome #result span {
+    font-weight: 700;
+}
+
+/* Style for the palindrome definition section */
+.container .palindrome-definition {
+    background-color: #FF6C47;
+    padding: 32px 41px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
